@@ -269,7 +269,6 @@
         <button class="menu-button" onclick="goToMenu()">ГЛАВНОЕ МЕНЮ</button>
     </div>
     <div id="message"></div> <!-- Область для сообщений -->
-    <audio id="wooshSound" src="woosh.mp3" preload="auto"></audio> <!-- Добавьте аудиофайл для воспроизведения -->
     <script>
         let isShuffling = false;
 
@@ -330,9 +329,6 @@
         }
 
       function showDiamond() {
-    // Воспроизвести звук "woosh.mp3" сразу
-    const wooshSound = document.getElementById('wooshSound');
-    wooshSound.play();
 
     // Показать алмаз с анимацией увеличения через 0.5 секунды
     const diamond = document.getElementById('diamond');

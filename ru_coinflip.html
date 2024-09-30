@@ -8,10 +8,16 @@
             src: url('intro.otf') format('opentype'); /* Убедитесь, что путь правильный */
         }
 body {
-    background-size: cover;
-    margin: 0;
-    height: 100%;
     font-family: 'Intro', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden; /* Отключение прокрутки */
 }
 
 .header {
@@ -121,7 +127,7 @@ body {
 
 .result {
     position: absolute;
-    top: 132px; /* Отступ сверху */
+    top: 385px;    /* Отступ сверху */
     left: 50%;
     transform: translateX(-50%); /* Центрирует по горизонтали */
     font-size: 32px;
